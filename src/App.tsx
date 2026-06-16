@@ -294,6 +294,23 @@ export default function App() {
   const [mobileView, setMobileView] = useState<'form' | 'preview'>('form');
   const [previewScale, setPreviewScale] = useState(1);
   const [userZoom, setUserZoom] = useState<number | null>(null); // null = auto-fit
+  const [paperHeight, setPaperHeight] = useState(1123);
+  const observerRef = React.useRef<ResizeObserver | null>(null);
+  const paperRef = useCallback((node: HTMLDivElement | null) => {
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+      observerRef.current = null;
+    }
+    if (node !== null) {
+      const resizeObserver = new ResizeObserver(entries => {
+        for (let entry of entries) {
+          setPaperHeight(entry.target.scrollHeight);
+        }
+      });
+      resizeObserver.observe(node);
+      observerRef.current = resizeObserver;
+    }
+  }, []);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -1444,14 +1461,16 @@ export default function App() {
           </div>
 
           {/* A4 Scaler Container */}
-          <div id="preview-scaler" className="w-full flex justify-center overflow-auto"
-            style={{ height: effectiveZoom < 1 ? `${1123 * effectiveZoom}px` : 'auto' }}
+          <div id="preview-scaler" className="w-full flex justify-center overflow-hidden"
+            style={{ height: effectiveZoom < 1 ? `${paperHeight * effectiveZoom}px` : 'auto' }}
           >
             {/* THE A4 PAPER */}
             <div
               id="print-resume-area"
+              ref={paperRef}
               className="print-page a4-paper"
               style={{
+                width: '210mm',
                 fontFamily: fonts.body,
                 color: '#1A1917',
                 fontSize: sizes.body,

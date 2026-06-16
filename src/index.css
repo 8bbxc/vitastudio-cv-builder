@@ -427,7 +427,6 @@ body {
 /* ═══════════ Responsive Breakpoints ═══════════ */
 @media (max-width: 1280px) {
   .a4-paper {
-    width: 100%;
     min-height: auto;
   }
 }
