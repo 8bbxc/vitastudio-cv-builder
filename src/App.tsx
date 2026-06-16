@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  User, Briefcase, GraduationCap, Code, Palette, Printer, FileText,
+  User, Briefcase, GraduationCap, Code, Palette, Printer,
   Trash2, Plus, Upload, Check, Globe, Mail, Phone, MapPin,
   ExternalLink, Languages, Eye, FolderGit,
   Award, ChevronUp, ChevronDown, Copy, FolderPlus, Search,
   Download, RotateCcw, X, Sparkles, LayoutTemplate, Settings2,
-  ZoomIn, ZoomOut, Maximize2, Minus as MinusIcon
+  ZoomIn, ZoomOut, Maximize2
 } from 'lucide-react';
+
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 //  BRAND SVG ICONS (Social Platforms)
@@ -334,10 +335,7 @@ export default function App() {
   }, [profiles, activeProfileId, isHydrated]);
 
   // ── A4 Responsive Scaling (auto-fit or user override) ──
-  const autoFitScale = useMemo(() => {
-    // Recalculated on render; the effect below keeps it in sync
-    return previewScale;
-  }, [previewScale]);
+
 
   useEffect(() => {
     const handleResize = () => {
