@@ -32,6 +32,21 @@ const TwitterIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string;
   </svg>
 );
 
+const InstagramIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 24 24" className={className} style={{ display: 'inline-block', verticalAlign: 'middle', ...style }} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+);
+
+const WhatsappIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 24 24" className={className} style={{ display: 'inline-block', verticalAlign: 'middle', ...style }} fill="currentColor">
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.488 1.966 14.022 1.01 11.5 1.01c-5.448 0-9.882 4.372-9.886 9.8.001 1.905.516 3.766 1.493 5.434l-.988 3.61 3.791-.986z" />
+  </svg>
+);
+
+
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 //  TYPE DEFINITIONS
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -791,6 +806,24 @@ export default function App() {
             <span className="hidden lg:inline text-[11px] font-medium text-[#9C9890] border-l border-[#E8E6E1] pl-3 ml-1">Premium CV Builder</span>
           </div>
 
+          {/* Developer & Repo Links */}
+          <div className="hidden lg:flex items-center gap-4 text-xs font-semibold text-[#5C5A54]">
+            <a href="https://github.com/8bbxc/vitastudio-cv-builder" target="_blank" rel="noopener noreferrer" className="hover:text-[#1A1917] flex items-center gap-1.5 transition-colors">
+              <GithubIcon className="w-4 h-4 text-[#9C9890]" />
+              <span>GitHub</span>
+            </a>
+            <span className="w-1 h-1 rounded-full bg-[#D6D3CD]" />
+            <a href="https://instagram.com/eng.yazan46" target="_blank" rel="noopener noreferrer" className="hover:text-[#D62976] flex items-center gap-1.5 transition-colors">
+              <InstagramIcon className="w-4 h-4 text-[#9C9890]" />
+              <span>@eng.yazan46</span>
+            </a>
+            <span className="w-1 h-1 rounded-full bg-[#D6D3CD]" />
+            <a href="https://wa.me/970568203031" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] flex items-center gap-1.5 transition-colors">
+              <WhatsappIcon className="w-4 h-4 text-[#9C9890]" />
+              <span>WhatsApp</span>
+            </a>
+          </div>
+
           {/* Action Buttons */}
           <div className="flex items-center gap-2">
             <button className="btn-secondary hidden sm:inline-flex" onClick={() => setCvData(INITIAL_DATA)}>
@@ -1535,15 +1568,37 @@ export default function App() {
       </main>
 
       {/* ═══ FOOTER ═══ */}
-      <footer className="no-print border-t border-[#E8E6E1] bg-white/60 backdrop-blur-sm">
-        <div className="max-w-[1600px] mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <div className="text-xs text-[#9C9890]">
-            &copy; 2026 <strong className="text-[#1A1917] font-bold">Eng. Yazan Saadeh</strong> — All Rights Reserved.
+      <footer className="no-print border-t border-[#E8E6E1] bg-white/60 backdrop-blur-sm py-6">
+        <div className="max-w-[1600px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col gap-1 items-center md:items-start">
+            <div className="text-sm font-bold text-[#1A1917]">
+              VITA<span style={{ color: accentColor }}>STUDIO</span>
+            </div>
+            <div className="text-xs text-[#9C9890]">
+              &copy; {new Date().getFullYear()} <strong className="text-[#1A1917] font-semibold">Eng. Yazan Saadeh</strong> — All Rights Reserved.
+            </div>
           </div>
-          <div className="flex items-center gap-4 text-[10px] text-[#B8B3AA] font-medium">
-            <span>React + TypeScript</span>
+
+          {/* Contact & Repository Links */}
+          <div className="flex flex-wrap items-center justify-center gap-3 text-xs">
+            <a href="https://github.com/8bbxc/vitastudio-cv-builder" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#5C5A54] hover:text-[#1A1917] transition-all bg-[#F3F1ED] hover:bg-[#EAE8E3] px-3.5 py-2 rounded-full font-semibold">
+              <GithubIcon className="w-3.5 h-3.5" />
+              <span>GitHub Repository</span>
+            </a>
+            <a href="https://instagram.com/eng.yazan46" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#5C5A54] hover:text-[#D62976] transition-all bg-[#F3F1ED] hover:bg-[#FCECF3] px-3.5 py-2 rounded-full font-semibold">
+              <InstagramIcon className="w-3.5 h-3.5" />
+              <span>Instagram: @eng.yazan46</span>
+            </a>
+            <a href="https://wa.me/970568203031" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#5C5A54] hover:text-[#25D366] transition-all bg-[#F3F1ED] hover:bg-[#EAF9EE] px-3.5 py-2 rounded-full font-semibold">
+              <WhatsappIcon className="w-3.5 h-3.5" />
+              <span>WhatsApp: +970 568 203 031</span>
+            </a>
+          </div>
+
+          <div className="flex items-center gap-3 text-[10px] text-[#B8B3AA] font-semibold">
+            <span>React + TS</span>
             <span className="w-1 h-1 rounded-full bg-[#D6D3CD]" />
-            <span>Tailwind CSS v4</span>
+            <span>Tailwind v4</span>
             <span className="w-1 h-1 rounded-full bg-[#D6D3CD]" />
             <span>Framer Motion</span>
           </div>
