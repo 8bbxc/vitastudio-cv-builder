@@ -474,6 +474,7 @@ body {
     page-break-after: avoid !important;
     page-break-before: avoid !important;
     page-break-inside: avoid !important;
+    transform: none !important;
   }
 
   .print-page * {

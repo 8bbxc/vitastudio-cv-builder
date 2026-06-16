@@ -865,7 +865,7 @@ export default function App() {
       </header>
 
       {/* ═══ MOBILE VIEW TOGGLE ═══ */}
-      <div className="xl:hidden flex justify-center py-3 gap-2 no-print border-b border-[#E8E6E1] bg-white/80 backdrop-blur-sm mobile-toggle-bar">
+      <div className="lg:hidden flex justify-center py-3 gap-2 no-print border-b border-[#E8E6E1] bg-white/80 backdrop-blur-sm mobile-toggle-bar">
         <button
           className={`chip ${mobileView === 'form' ? 'active' : ''}`}
           onClick={() => setMobileView('form')}
@@ -881,12 +881,12 @@ export default function App() {
       </div>
 
       {/* ═══ MAIN COCKPIT ═══ */}
-      <main className="flex-1 max-w-[1600px] mx-auto w-full px-4 sm:px-6 py-6 grid grid-cols-1 xl:grid-cols-12 gap-6 relative z-10">
+      <main className="flex-1 max-w-[1600px] mx-auto w-full px-4 sm:px-6 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10">
 
         {/* ═══════════════════════════════════
             LEFT PANEL — FORM EDITOR
         ═══════════════════════════════════ */}
-        <section className={`xl:col-span-5 flex flex-col bg-white rounded-2xl border border-[#E8E6E1] overflow-hidden no-print ${mobileView !== 'form' ? 'hidden xl:flex' : ''}`}
+        <section className={`lg:col-span-5 flex flex-col bg-white rounded-2xl border border-[#E8E6E1] overflow-hidden no-print ${mobileView !== 'form' ? 'hidden lg:flex' : ''}`}
           style={{ height: 'calc(100vh - 120px)', boxShadow: '0 1px 3px rgba(0,0,0,0.03)' }}
         >
           {/* Tab Navigation */}
@@ -1409,7 +1409,7 @@ export default function App() {
         {/* ═══════════════════════════════════
             RIGHT PANEL — A4 LIVE PREVIEW
         ═══════════════════════════════════ */}
-        <section className={`xl:col-span-7 flex flex-col items-center overflow-y-auto rounded-2xl border border-[#E8E6E1] p-4 sm:p-6 relative ${mobileView !== 'preview' ? 'hidden xl:flex' : ''}`}
+        <section className={`lg:col-span-7 flex flex-col items-center overflow-auto rounded-2xl border border-[#E8E6E1] p-4 sm:p-6 relative ${mobileView !== 'preview' ? 'hidden lg:flex' : ''}`}
           style={{ background: '#F0EFED', height: 'calc(100vh - 120px)', boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.03)' }}
         >
 
@@ -1461,27 +1461,40 @@ export default function App() {
           </div>
 
           {/* A4 Scaler Container */}
-          <div id="preview-scaler" className="w-full flex justify-center overflow-hidden"
-            style={{ height: effectiveZoom < 1 ? `${paperHeight * effectiveZoom}px` : 'auto' }}
-          >
-            {/* THE A4 PAPER */}
+          <div id="preview-scaler" className="w-full flex justify-center py-4">
+            {/* The scaled wrapper */}
             <div
-              id="print-resume-area"
-              ref={paperRef}
-              className="print-page a4-paper"
               style={{
-                width: '210mm',
-                fontFamily: fonts.body,
-                color: '#1A1917',
-                fontSize: sizes.body,
-                lineHeight: 1.6,
-                padding: '36px 40px',
-                transform: `scale(${effectiveZoom})`,
-                transformOrigin: 'top center',
-                display: 'flex',
-                flexDirection: 'column',
+                width: `${794 * effectiveZoom}px`,
+                height: `${paperHeight * effectiveZoom}px`,
+                position: 'relative',
+                overflow: 'hidden',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
+                borderRadius: '4px',
               }}
             >
+              {/* THE A4 PAPER */}
+              <div
+                id="print-resume-area"
+                ref={paperRef}
+                className="print-page a4-paper"
+                style={{
+                  width: '794px',
+                  minHeight: '1123px',
+                  fontFamily: fonts.body,
+                  color: '#1A1917',
+                  fontSize: sizes.body,
+                  lineHeight: 1.6,
+                  padding: '36px 40px',
+                  transform: `scale(${effectiveZoom})`,
+                  transformOrigin: 'top left',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                }}
+              >
               {/* Top Bar Decoration */}
               {headerStyle === 'top-bar' && (
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 5, background: accentColor }} />
@@ -1586,6 +1599,7 @@ export default function App() {
               </div>
             </div>
           </div>
+        </div>
 
         </section>
 
