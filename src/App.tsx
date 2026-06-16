@@ -808,9 +808,14 @@ export default function App() {
 
           {/* Developer & Repo Links */}
           <div className="hidden lg:flex items-center gap-4 text-xs font-semibold text-[#5C5A54]">
-            <a href="https://github.com/8bbxc/vitastudio-cv-builder" target="_blank" rel="noopener noreferrer" className="hover:text-[#1A1917] flex items-center gap-1.5 transition-colors">
+            <a href="https://github.com/8bbxc" target="_blank" rel="noopener noreferrer" className="hover:text-[#1A1917] flex items-center gap-1.5 transition-colors">
               <GithubIcon className="w-4 h-4 text-[#9C9890]" />
-              <span>GitHub</span>
+              <span>GitHub: @8bbxc</span>
+            </a>
+            <span className="w-1 h-1 rounded-full bg-[#D6D3CD]" />
+            <a href="https://github.com/8bbxc/vitastudio-cv-builder" target="_blank" rel="noopener noreferrer" className="hover:text-[#1A1917] flex items-center gap-1.5 transition-colors">
+              <FolderGit className="w-4 h-4 text-[#9C9890]" />
+              <span>Repository</span>
             </a>
             <span className="w-1 h-1 rounded-full bg-[#D6D3CD]" />
             <a href="https://instagram.com/eng.yazan46" target="_blank" rel="noopener noreferrer" className="hover:text-[#D62976] flex items-center gap-1.5 transition-colors">
@@ -1581,9 +1586,13 @@ export default function App() {
 
           {/* Contact & Repository Links */}
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs">
-            <a href="https://github.com/8bbxc/vitastudio-cv-builder" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#5C5A54] hover:text-[#1A1917] transition-all bg-[#F3F1ED] hover:bg-[#EAE8E3] px-3.5 py-2 rounded-full font-semibold">
+            <a href="https://github.com/8bbxc" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#5C5A54] hover:text-[#1A1917] transition-all bg-[#F3F1ED] hover:bg-[#EAE8E3] px-3.5 py-2 rounded-full font-semibold">
               <GithubIcon className="w-3.5 h-3.5" />
-              <span>GitHub Repository</span>
+              <span>GitHub: @8bbxc</span>
+            </a>
+            <a href="https://github.com/8bbxc/vitastudio-cv-builder" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#5C5A54] hover:text-[#1A1917] transition-all bg-[#F3F1ED] hover:bg-[#EAE8E3] px-3.5 py-2 rounded-full font-semibold">
+              <FolderGit className="w-3.5 h-3.5" />
+              <span>Repository</span>
             </a>
             <a href="https://instagram.com/eng.yazan46" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#5C5A54] hover:text-[#D62976] transition-all bg-[#F3F1ED] hover:bg-[#FCECF3] px-3.5 py-2 rounded-full font-semibold">
               <InstagramIcon className="w-3.5 h-3.5" />
