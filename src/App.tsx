@@ -46,6 +46,36 @@ const WhatsappIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string
   </svg>
 );
 
+const FacebookIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 24 24" className={className} style={{ display: 'inline-block', verticalAlign: 'middle', ...style }} fill="currentColor">
+    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
+  </svg>
+);
+
+const YoutubeIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 24 24" className={className} style={{ display: 'inline-block', verticalAlign: 'middle', ...style }} fill="currentColor">
+    <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11C4.483 20.455 12 20.455 12 20.455s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+  </svg>
+);
+
+const BehanceIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 24 24" className={className} style={{ display: 'inline-block', verticalAlign: 'middle', ...style }} fill="currentColor">
+    <path d="M22 9h-7v1.5h7V9zm-13.882-.533c-.702 0-1.272.235-1.724.707-.442.47-.663 1.09-.663 1.86 0 .734.205 1.343.626 1.826.42.484 1.01.726 1.76.726.685 0 1.22-.218 1.603-.655.385-.436.577-.998.577-1.687h-3.93c.026-.452.164-.81.417-1.07.253-.262.6-.393 1.04-.393.415 0 .753.13 1.014.39.262.26.425.642.49 1.144h1.763c-.097-.936-.457-1.658-1.082-2.168-.625-.51-1.425-.765-2.4-.765zm6.545 2.5c.348-.344.82-.517 1.415-.517.55 0 .99.146 1.32.438.33.292.494.697.494 1.216 0 .47-.148.86-.445 1.173-.298.313-.715.47-1.25.47-.533 0-.96-.145-1.282-.435-.32-.29-.482-.692-.482-1.205 0-.495.143-.876.43-1.14zm-6.574-1.295c.343 0 .61.08.802.242.193.16.29.395.29.702 0 .285-.09.508-.27.67-.18.163-.44.243-.782.243h-1.65V9.672h1.61zm-.172 2.766c.394 0 .692.09.893.272.2.182.3.447.3.794 0 .324-.1.58-.3.77-.2.187-.506.282-.917.282h-1.793v-2.12h1.817zm4.722-5.596c.866-.69 2.03-1.037 3.49-1.037 1.343 0 2.417.305 3.22.915s1.205 1.47 1.205 2.583c0 .825-.23 1.503-.688 2.032-.458.53-1.1.884-1.927 1.066.994.225 1.733.666 2.217 1.325.485.658.727 1.492.727 2.5 0 1.242-.438 2.23-1.314 2.966-.876.737-2.072 1.105-3.586 1.105-1.464 0-2.652-.296-3.56-.89-1.026-.67-1.54-1.748-1.54-3.235V5.547zm-5.71-.5V19h-5.23V4.047c1.378 0 2.457.29 3.238.87.78.58 1.173 1.385 1.173 2.41 0 .656-.172 1.21-.516 1.66-.344.45-.858.74-1.542.87.87.16 1.517.514 1.94 1.06.425.547.637 1.243.637 2.088 0 1.178-.396 2.09-1.188 2.735-.79.645-1.94.968-3.448.968h-1.76v-14h1.9c1.177 0 2.062.247 2.656.74.594.493.89 1.172.89 2.035 0 .546-.145 1.018-.435 1.414-.29.396-.75.672-1.383.827.75.143 1.305.474 1.666.992.36.518.54 1.173.54 1.966 0 1.05-.347 1.874-1.042 2.473-.695.6-1.734.9-3.118.9H4.113v-14h1.766c1.177 0 2.062.247 2.656.74z" />
+  </svg>
+);
+
+const DribbbleIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 24 24" className={className} style={{ display: 'inline-block', verticalAlign: 'middle', ...style }} fill="currentColor">
+    <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-12.523c-.305-.102-3.003-.968-6.03-.448.788 2.158 1.103 3.938 1.178 4.41.016.1.08.47.094.596 2.87-2.12 4.49-4.22 4.758-4.558zm-6.242 5.86c-.08-.344-.413-2.154-1.258-4.364-3.17.844-5.91 2.868-7.14 5.305 1.636 1.308 3.7 2.088 5.96 2.088 1.01 0 1.98-.154 2.892-.44-.06-.113-.374-.755-.454-1.59zm-9.356-.84c1.12-2.148 3.65-4.017 6.7-4.836-.214-.492-.448-.994-.694-1.492-4.14 1.196-8.08.974-8.498.948.163 2.142.927 4.095 2.1 5.626l.392-.246zm-.43-7.584c.338.01 3.99.164 7.822-1.012-.663-1.21-1.378-2.316-2.072-3.238-2.83 1.04-4.992 3.018-5.75 4.25zm8.567-4.664c.734.978 1.47 2.153 2.138 3.447 3.195-.494 4.542.41 4.795.6.536-1.528.796-3.16.796-4.83 0-1.748-.282-3.433-.82-5.016-1.026.966-3.567 4.195-6.908 5.798zm-1.846-1.325c3.08-1.5 5.367-4.417 6.27-5.32-1.782-1.393-4.01-2.228-6.43-2.228-2.115 0-4.08.636-5.71 1.722.628.847 1.328 1.884 1.94 3.064-.02.01.2.75.28 1.305v.235z" />
+  </svg>
+);
+
+const MediumIcon = ({ className = "w-3.5 h-3.5", style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 24 24" className={className} style={{ display: 'inline-block', verticalAlign: 'middle', ...style }} fill="currentColor">
+    <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zm3.04 0c0 3.24-.46 5.86-1.02 5.86-.56 0-1.01-2.62-1.01-5.86s.45-5.86 1.01-5.86c.56 0 1.02 2.62 1.02 5.86z" />
+  </svg>
+);
+
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 //  TYPE DEFINITIONS
@@ -58,10 +88,17 @@ interface SkillItem { id: string; name: string; level: number; }
 interface LanguageItem { id: string; name: string; level: string; }
 interface AwardItem { id: string; title: string; issuer: string; period: string; }
 
+interface SocialLink {
+  id: string;
+  platform: string;
+  value: string;
+}
+
 interface CVData {
   fullName: string; jobTitle: string; email: string; phone: string;
   location: string; summary: string; website: string;
   github: string; linkedin: string; twitter: string;
+  socialLinks?: SocialLink[];
   experiences: ExperienceItem[]; educations: EducationItem[];
   projects: ProjectItem[]; skills: SkillItem[];
   languages: LanguageItem[]; awards: AwardItem[];
@@ -266,28 +303,66 @@ const ACCENT_COLORS = [
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const uid = () => 'id_' + Math.random().toString(36).slice(2, 10);
 
+const resolveSocialIcon = (platform: string, accentColor: string) => {
+  const norm = platform.toLowerCase();
+  if (norm.includes('github')) return <GithubIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('linkedin')) return <LinkedinIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('twitter') || norm.includes('x.com')) return <TwitterIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('instagram')) return <InstagramIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('whatsapp')) return <WhatsappIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('facebook')) return <FacebookIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('youtube')) return <YoutubeIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('behance')) return <BehanceIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('dribbble')) return <DribbbleIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  if (norm.includes('medium')) return <MediumIcon className="w-3 h-3" style={{ color: accentColor }} />;
+  return null;
+};
+
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 //  MAIN APP COMPONENT
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 export default function App() {
+  // Helper to load profile data synchronously from localStorage on initial render
+  const getActiveProfileInitial = () => {
+    const saved = localStorage.getItem('vitastudio_profiles');
+    let loadedProfiles = [{
+      id: 'default', name: 'Primary CV', cvData: INITIAL_DATA, photo: '',
+      headerStyle: 'centered', layoutStyle: 'single-col', fontPair: 'serif-sans',
+      accentColor: '#B8965A', sectionStyle: 'border-bottom', fontSize: 'medium',
+      sectionOrder: DEFAULT_SECTION_ORDER, showSectionIcons: true, showContactIcons: true
+    }];
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) loadedProfiles = parsed;
+      } catch {}
+    }
+    const activeId = localStorage.getItem('vitastudio_active_profile') || 'default';
+    return {
+      all: loadedProfiles,
+      active: loadedProfiles.find(p => p.id === activeId) || loadedProfiles[0]
+    };
+  };
+
+  const initialConfig = getActiveProfileInitial();
+
   // ── State ──
-  const [profiles, setProfiles] = useState<SavedProfile[]>([]);
-  const [activeProfileId, setActiveProfileId] = useState('default');
-  const [isHydrated, setIsHydrated] = useState(false);
+  const [profiles, setProfiles] = useState<SavedProfile[]>(initialConfig.all);
+  const [activeProfileId, setActiveProfileId] = useState<string>(initialConfig.active.id);
 
-  const [cvData, setCvData] = useState<CVData>(INITIAL_DATA);
-  const [photo, setPhoto] = useState('');
+  const [cvData, setCvData] = useState<CVData>(initialConfig.active.cvData);
+  const [photo, setPhoto] = useState<string>(initialConfig.active.photo || '');
 
-  const [headerStyle, setHeaderStyle] = useState('centered');
-  const [layoutStyle, setLayoutStyle] = useState('single-col');
-  const [fontPair, setFontPair] = useState('serif-sans');
-  const [accentColor, setAccentColor] = useState('#B8965A');
-  const [sectionStyle, setSectionStyle] = useState('border-bottom');
-  const [fontSize, setFontSize] = useState('medium');
-  const [sectionOrder, setSectionOrder] = useState<string[]>(DEFAULT_SECTION_ORDER);
-  const [showSectionIcons, setShowSectionIcons] = useState(true);
-  const [showContactIcons, setShowContactIcons] = useState(true);
+  const [headerStyle, setHeaderStyle] = useState<string>(initialConfig.active.headerStyle || 'centered');
+  const [layoutStyle, setLayoutStyle] = useState<string>(initialConfig.active.layoutStyle || 'single-col');
+  const [fontPair, setFontPair] = useState<string>(initialConfig.active.fontPair || 'serif-sans');
+  const [accentColor, setAccentColor] = useState<string>(initialConfig.active.accentColor || '#B8965A');
+  const [sectionStyle, setSectionStyle] = useState<string>(initialConfig.active.sectionStyle || 'border-bottom');
+  const [fontSize, setFontSize] = useState<string>(initialConfig.active.fontSize || 'medium');
+  const [sectionOrder, setSectionOrder] = useState<string[]>(initialConfig.active.sectionOrder || DEFAULT_SECTION_ORDER);
+  const [showSectionIcons, setShowSectionIcons] = useState<boolean>(initialConfig.active.showSectionIcons ?? true);
+  const [showContactIcons, setShowContactIcons] = useState<boolean>(initialConfig.active.showContactIcons ?? true);
 
   const [activeTab, setActiveTab] = useState('personal');
   const [designView, setDesignView] = useState<'presets' | 'custom'>('presets');
@@ -316,35 +391,8 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedPresetId, setSelectedPresetId] = useState('');
 
-  // ── Hydration from LocalStorage ──
-  useEffect(() => {
-    const saved = localStorage.getItem('vitastudio_profiles');
-    const activeId = localStorage.getItem('vitastudio_active_profile') || 'default';
-
-    if (saved) {
-      try {
-        const parsed: SavedProfile[] = JSON.parse(saved);
-        setProfiles(parsed);
-        setActiveProfileId(activeId);
-        const current = parsed.find(p => p.id === activeId);
-        if (current) loadProfileData(current);
-      } catch { /* ignore */ }
-    } else {
-      const defaultProfile: SavedProfile = {
-        id: 'default', name: 'Primary CV', cvData: INITIAL_DATA, photo: '',
-        headerStyle: 'centered', layoutStyle: 'single-col', fontPair: 'serif-sans',
-        accentColor: '#B8965A', sectionStyle: 'border-bottom', fontSize: 'medium',
-        sectionOrder: DEFAULT_SECTION_ORDER, showSectionIcons: true, showContactIcons: true
-      };
-      setProfiles([defaultProfile]);
-      setActiveProfileId('default');
-    }
-    setIsHydrated(true);
-  }, []);
-
   // ── Sync active profile back into profiles array ──
   useEffect(() => {
-    if (!isHydrated) return;
     setProfiles(prev => {
       if (prev.length === 0) return [{
         id: activeProfileId, name: 'Primary CV', cvData, photo,
@@ -356,15 +404,15 @@ export default function App() {
         accentColor, sectionStyle, fontSize, sectionOrder, showSectionIcons, showContactIcons
       } : p);
     });
-  }, [cvData, photo, headerStyle, layoutStyle, fontPair, accentColor, sectionStyle, fontSize, sectionOrder, showSectionIcons, showContactIcons, activeProfileId, isHydrated]);
+  }, [cvData, photo, headerStyle, layoutStyle, fontPair, accentColor, sectionStyle, fontSize, sectionOrder, showSectionIcons, showContactIcons, activeProfileId]);
 
   // ── Persist to localStorage ──
   useEffect(() => {
-    if (isHydrated && profiles.length > 0) {
+    if (profiles.length > 0) {
       localStorage.setItem('vitastudio_profiles', JSON.stringify(profiles));
       localStorage.setItem('vitastudio_active_profile', activeProfileId);
     }
-  }, [profiles, activeProfileId, isHydrated]);
+  }, [profiles, activeProfileId]);
 
   // ── A4 Responsive Scaling (auto-fit or user override) ──
 
@@ -424,6 +472,25 @@ export default function App() {
       img.src = ev.target?.result as string;
     };
     reader.readAsDataURL(file);
+  }, []);
+
+  // ── Get Active Social Links with fallback to flat fields ──
+  const activeSocialLinks = useMemo<SocialLink[]>(() => {
+    if (cvData.socialLinks && cvData.socialLinks.length > 0) {
+      return cvData.socialLinks;
+    }
+    const temp: SocialLink[] = [];
+    if (cvData.linkedin) temp.push({ id: 'linkedin_init', platform: 'LinkedIn', value: cvData.linkedin });
+    if (cvData.github) temp.push({ id: 'github_init', platform: 'GitHub', value: cvData.github });
+    if (cvData.twitter) temp.push({ id: 'twitter_init', platform: 'Twitter / X', value: cvData.twitter });
+    return temp;
+  }, [cvData.socialLinks, cvData.linkedin, cvData.github, cvData.twitter]);
+
+  const updateSocialLinks = useCallback((links: SocialLink[]) => {
+    setCvData(prev => ({
+      ...prev,
+      socialLinks: links
+    }));
   }, []);
 
   // ── Array CRUD Operations ──
@@ -524,6 +591,7 @@ export default function App() {
     setCvData({
       fullName: '', jobTitle: '', email: '', phone: '', location: '', summary: '',
       website: '', github: '', linkedin: '', twitter: '',
+      socialLinks: [],
       experiences: [], educations: [], projects: [], skills: [], languages: [], awards: []
     });
     setPhoto('');
@@ -533,12 +601,162 @@ export default function App() {
   const triggerPrint = useCallback(() => window.print(), []);
 
   const exportDocx = useCallback(() => {
-    const content = document.getElementById('print-resume-area')?.innerHTML;
-    if (!content) return;
+    const socialLinks: string[] = [];
+    const activeSocials = cvData.socialLinks && cvData.socialLinks.length > 0
+      ? cvData.socialLinks
+      : [
+          ...(cvData.linkedin ? [{ id: '1', platform: 'LinkedIn', value: cvData.linkedin }] : []),
+          ...(cvData.github ? [{ id: '2', platform: 'GitHub', value: cvData.github }] : []),
+          ...(cvData.twitter ? [{ id: '3', platform: 'Twitter / X', value: cvData.twitter }] : [])
+        ];
+
+    activeSocials.forEach(item => {
+      if (item.value) {
+        socialLinks.push(`${item.platform}: ${item.value}`);
+      }
+    });
+
+    const contacts = [];
+    if (cvData.email) contacts.push(`Email: ${cvData.email}`);
+    if (cvData.phone) contacts.push(`Phone: ${cvData.phone}`);
+    if (cvData.location) contacts.push(`Location: ${cvData.location}`);
+    if (cvData.website) contacts.push(`Website: ${cvData.website}`);
+
+    let experienceHtml = '';
+    if (cvData.experiences && cvData.experiences.length > 0) {
+      experienceHtml = `
+        <h2 style="font-size: 13pt; color: ${accentColor}; border-bottom: 1.5px solid ${accentColor}; margin-top: 18px; padding-bottom: 2px; font-family: 'Arial', sans-serif;">WORK EXPERIENCE</h2>
+        ${cvData.experiences.map(exp => `
+          <div style="margin-bottom: 10px; font-family: 'Arial', sans-serif;">
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+              <tr>
+                <td align="left" style="font-weight: bold; font-size: 10pt;">${exp.role} at ${exp.company}</td>
+                <td align="right" style="font-size: 9.5pt; color: #555555;">${exp.period}</td>
+              </tr>
+            </table>
+            <div style="font-size: 9.5pt; color: #333333; margin-top: 3px; white-space: pre-line;">${exp.desc}</div>
+          </div>
+        `).join('')}
+      `;
+    }
+
+    let educationHtml = '';
+    if (cvData.educations && cvData.educations.length > 0) {
+      educationHtml = `
+        <h2 style="font-size: 13pt; color: ${accentColor}; border-bottom: 1.5px solid ${accentColor}; margin-top: 18px; padding-bottom: 2px; font-family: 'Arial', sans-serif;">EDUCATION</h2>
+        ${cvData.educations.map(edu => `
+          <div style="margin-bottom: 10px; font-family: 'Arial', sans-serif;">
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+              <tr>
+                <td align="left" style="font-weight: bold; font-size: 10pt;">${edu.degree}</td>
+                <td align="right" style="font-size: 9.5pt; color: #555555;">${edu.period}</td>
+              </tr>
+            </table>
+            <div style="font-size: 9.5pt; color: #333333; font-style: italic;">${edu.institution}</div>
+            ${edu.desc ? `<div style="font-size: 9.5pt; color: #555555; margin-top: 2px; white-space: pre-line;">${edu.desc}</div>` : ''}
+          </div>
+        `).join('')}
+      `;
+    }
+
+    let projectsHtml = '';
+    if (cvData.projects && cvData.projects.length > 0) {
+      projectsHtml = `
+        <h2 style="font-size: 13pt; color: ${accentColor}; border-bottom: 1.5px solid ${accentColor}; margin-top: 18px; padding-bottom: 2px; font-family: 'Arial', sans-serif;">PROJECTS</h2>
+        ${cvData.projects.map(proj => `
+          <div style="margin-bottom: 10px; font-family: 'Arial', sans-serif;">
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+              <tr>
+                <td align="left" style="font-weight: bold; font-size: 10pt;">${proj.title}</td>
+                <td align="right" style="font-size: 9.5pt; color: #555555;">${proj.link ? proj.link : ''}</td>
+              </tr>
+            </table>
+            <div style="font-size: 9.5pt; color: #333333; margin-top: 3px; white-space: pre-line;">${proj.desc}</div>
+          </div>
+        `).join('')}
+      `;
+    }
+
+    let skillsHtml = '';
+    if (cvData.skills && cvData.skills.length > 0) {
+      skillsHtml = `
+        <h2 style="font-size: 13pt; color: ${accentColor}; border-bottom: 1.5px solid ${accentColor}; margin-top: 18px; padding-bottom: 2px; font-family: 'Arial', sans-serif;">SKILLS</h2>
+        <p style="font-size: 9.5pt; color: #333333; font-family: 'Arial', sans-serif; line-height: 1.4;">
+          ${cvData.skills.map(s => `<strong>${s.name}</strong> (${s.level}%)`).join('  |  ')}
+        </p>
+      `;
+    }
+
+    let languagesHtml = '';
+    if (cvData.languages && cvData.languages.length > 0) {
+      languagesHtml = `
+        <h2 style="font-size: 13pt; color: ${accentColor}; border-bottom: 1.5px solid ${accentColor}; margin-top: 18px; padding-bottom: 2px; font-family: 'Arial', sans-serif;">LANGUAGES</h2>
+        <p style="font-size: 9.5pt; color: #333333; font-family: 'Arial', sans-serif; line-height: 1.4;">
+          ${cvData.languages.map(l => `<strong>${l.name}</strong> (${l.level})`).join('  |  ')}
+        </p>
+      `;
+    }
+
+    let awardsHtml = '';
+    if (cvData.awards && cvData.awards.length > 0) {
+      awardsHtml = `
+        <h2 style="font-size: 13pt; color: ${accentColor}; border-bottom: 1.5px solid ${accentColor}; margin-top: 18px; padding-bottom: 2px; font-family: 'Arial', sans-serif;">AWARDS & HONORS</h2>
+        ${cvData.awards.map(aw => `
+          <div style="margin-bottom: 8px; font-family: 'Arial', sans-serif;">
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+              <tr>
+                <td align="left" style="font-weight: bold; font-size: 10pt;">${aw.title}</td>
+                <td align="right" style="font-size: 9.5pt; color: #555555;">${aw.period}</td>
+              </tr>
+            </table>
+            <div style="font-size: 9.5pt; color: #333333;">${aw.issuer}</div>
+          </div>
+        `).join('')}
+      `;
+    }
+
     const html = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
-      <head><title>Resume - ${cvData.fullName}</title>
-      <style>body{font-family:'Arial',sans-serif;font-size:10pt;color:#111}h1{font-size:22pt;margin-bottom:4px}h2{font-size:11pt;color:${accentColor};border-bottom:1px solid ${accentColor};padding-bottom:2px;margin-top:14px;text-transform:uppercase}a{color:${accentColor}}.item-title{font-weight:bold}</style></head>
-      <body>${content}</body></html>`;
+      <head>
+        <!--[if gte mso 9]>
+        <xml>
+          <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>100</w:Zoom>
+          </w:WordDocument>
+        </xml>
+        <![endif]-->
+        <title>Resume - ${cvData.fullName}</title>
+        <style>
+          body { font-family: 'Arial', sans-serif; font-size: 9.5pt; color: #1A1917; line-height: 1.4; padding: 30px; }
+          a { color: ${accentColor}; text-decoration: none; }
+        </style>
+      </head>
+      <body>
+        <div style="text-align: center; margin-bottom: 15px; font-family: 'Arial', sans-serif;">
+          <h1 style="font-size: 20pt; margin: 0; color: #1A1917; font-weight: bold;">${cvData.fullName || 'Your Name'}</h1>
+          <p style="font-size: 11pt; font-weight: bold; color: ${accentColor}; margin: 4px 0 8px; text-transform: uppercase; letter-spacing: 1px;">
+            ${cvData.jobTitle || 'Your Title'}
+          </p>
+          <p style="font-size: 9pt; color: #555555; margin: 4px 0 0;">
+            ${contacts.join('  •  ')}
+          </p>
+          ${socialLinks.length > 0 ? `<p style="font-size: 8.5pt; color: #777777; margin: 2px 0 0;">${socialLinks.join('  •  ')}</p>` : ''}
+        </div>
+
+        ${cvData.summary ? `
+          <h2 style="font-size: 13pt; color: ${accentColor}; border-bottom: 1.5px solid ${accentColor}; margin-top: 15px; padding-bottom: 2px; font-family: 'Arial', sans-serif;">PROFESSIONAL SUMMARY</h2>
+          <p style="font-size: 9.5pt; color: #333333; font-family: 'Arial', sans-serif; white-space: pre-line; line-height: 1.4;">${cvData.summary}</p>
+        ` : ''}
+
+        ${experienceHtml}
+        ${educationHtml}
+        ${projectsHtml}
+        ${skillsHtml}
+        ${languagesHtml}
+        ${awardsHtml}
+      </body>
+    </html>`;
+
     const blob = new Blob(['\ufeff' + html], { type: 'application/msword' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -546,7 +764,7 @@ export default function App() {
     a.download = `${(cvData.fullName || 'Resume').replace(/\s+/g, '_')}.doc`;
     a.click();
     URL.revokeObjectURL(url);
-  }, [cvData.fullName, accentColor]);
+  }, [cvData, accentColor]);
 
   const applyPreset = useCallback((preset: TemplatePreset) => {
     setHeaderStyle(preset.headerStyle);
@@ -964,12 +1182,101 @@ export default function App() {
 
                   {/* Social Links */}
                   <div className="card-section space-y-3">
-                    <span className="field-label" style={{ marginBottom: 0 }}>Social Links</span>
-                    <div className="grid grid-cols-3 gap-3">
-                      <Field label="GitHub" value={cvData.github} onChange={v => setCvData(d => ({ ...d, github: v }))} placeholder="github.com/..." />
-                      <Field label="LinkedIn" value={cvData.linkedin} onChange={v => setCvData(d => ({ ...d, linkedin: v }))} placeholder="linkedin.com/..." />
-                      <Field label="Twitter / X" value={cvData.twitter} onChange={v => setCvData(d => ({ ...d, twitter: v }))} placeholder="x.com/..." />
+                    <div className="flex justify-between items-center">
+                      <span className="field-label" style={{ marginBottom: 0 }}>Social Links</span>
+                      <button 
+                        className="btn-primary flex items-center gap-1"
+                        style={{ padding: '4px 8px', fontSize: 10 }}
+                        onClick={() => {
+                          const newId = 'soc_' + Date.now();
+                          const updated = [...activeSocialLinks, { id: newId, platform: 'LinkedIn', value: '' }];
+                          updateSocialLinks(updated);
+                        }}
+                      >
+                        <Plus size={10} /> Add Link
+                      </button>
                     </div>
+                    
+                    {activeSocialLinks.length === 0 ? (
+                      <p className="text-xs text-[#9C9890] italic">No social links added yet. Click 'Add Link' to add one.</p>
+                    ) : (
+                      <div className="space-y-2">
+                        {activeSocialLinks.map((item, idx) => (
+                          <div key={item.id} className="flex gap-2 items-center bg-[#F7F7F5] p-2 rounded-lg border border-[#E8E6E1]">
+                            {/* Platform Dropdown */}
+                            <select
+                              className="input-field text-xs"
+                              style={{ width: '120px', padding: '4px 8px', height: '28px' }}
+                              value={item.platform}
+                              onChange={e => {
+                                const updated = activeSocialLinks.map((x, i) => i === idx ? { ...x, platform: e.target.value } : x);
+                                updateSocialLinks(updated);
+                              }}
+                            >
+                              {['LinkedIn', 'GitHub', 'Twitter / X', 'Instagram', 'WhatsApp', 'Facebook', 'YouTube', 'Behance', 'Dribbble', 'Medium'].map(p => (
+                                <option key={p} value={p}>{p}</option>
+                              ))}
+                            </select>
+                            
+                            {/* Value Input */}
+                            <input
+                              type="text"
+                              className="input-field text-xs flex-1"
+                              style={{ padding: '4px 8px', height: '28px' }}
+                              placeholder="username or link..."
+                              value={item.value}
+                              onChange={e => {
+                                const updated = activeSocialLinks.map((x, i) => i === idx ? { ...x, value: e.target.value } : x);
+                                updateSocialLinks(updated);
+                              }}
+                            />
+                            
+                            {/* Actions (Move & Delete) */}
+                            <div className="flex items-center gap-1">
+                              {idx > 0 && (
+                                <button 
+                                  className="btn-icon" 
+                                  style={{ width: 22, height: 22 }}
+                                  onClick={() => {
+                                    const updated = [...activeSocialLinks];
+                                    [updated[idx], updated[idx - 1]] = [updated[idx - 1], updated[idx]];
+                                    updateSocialLinks(updated);
+                                  }}
+                                  title="Move Up"
+                                >
+                                  <ChevronUp size={11} />
+                                </button>
+                              )}
+                              {idx < activeSocialLinks.length - 1 && (
+                                <button 
+                                  className="btn-icon" 
+                                  style={{ width: 22, height: 22 }}
+                                  onClick={() => {
+                                    const updated = [...activeSocialLinks];
+                                    [updated[idx], updated[idx + 1]] = [updated[idx + 1], updated[idx]];
+                                    updateSocialLinks(updated);
+                                  }}
+                                  title="Move Down"
+                                >
+                                  <ChevronDown size={11} />
+                                </button>
+                              )}
+                              <button 
+                                className="btn-icon btn-danger" 
+                                style={{ width: 22, height: 22 }}
+                                onClick={() => {
+                                  const updated = activeSocialLinks.filter((_, i) => i !== idx);
+                                  updateSocialLinks(updated);
+                                }}
+                                title="Delete"
+                              >
+                                <Trash2 size={11} />
+                              </button>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
 
                   <Field label="Professional Summary" value={cvData.summary} onChange={v => setCvData(d => ({ ...d, summary: v }))} rows={4} />
@@ -1558,11 +1865,14 @@ export default function App() {
                 )}
 
                 {/* Social Links Row */}
-                {(cvData.github || cvData.linkedin || cvData.twitter) && (
+                {activeSocialLinks.filter(item => item.value).length > 0 && (
                   <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: headerStyle === 'centered' ? 'center' : 'flex-start', gap: '4px 14px', marginTop: 8, fontSize: '9px', color: '#9C9890' }}>
-                    {cvData.github && <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>{showContactIcons && <GithubIcon className="w-3 h-3" style={{ color: accentColor }} />}{cvData.github}</span>}
-                    {cvData.linkedin && <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>{showContactIcons && <LinkedinIcon className="w-3 h-3" style={{ color: accentColor }} />}{cvData.linkedin}</span>}
-                    {cvData.twitter && <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>{showContactIcons && <TwitterIcon className="w-3 h-3" style={{ color: accentColor }} />}{cvData.twitter}</span>}
+                    {activeSocialLinks.filter(item => item.value).map(item => (
+                      <span key={item.id} style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                        {showContactIcons && resolveSocialIcon(item.platform, accentColor)}
+                        {item.value}
+                      </span>
+                    ))}
                   </div>
                 )}
               </header>
